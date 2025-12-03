@@ -369,7 +369,15 @@ func AllocateCompositeTime(category string) map[string]int {
     *   背诵综应的核心考点。
 *   **为何早起**: 晚上下班后的时间是不可控的（加班、聚餐、疲惫），只有早上的时间完全属于你。
 
-### G2: Commute Microservice (通勤微服务) - `08:00 - 09:00`
+### G1.5: Morning Buffer (晨间缓冲) - `07:30 - 08:30`
+> **Priority**: `Medium` | **Context**: `Life Support`
+
+*   **07:30 - 08:00 (Life)**: 营养早餐 & 洗漱。身体是革命的本钱，低血糖会直接导致 G2/G3 宕机。
+*   **08:00 - 08:30 (Light IO)**: **晨读/预热**。
+    *   利用早饭后的碎片时间，进行低强度的记忆工作。
+    *   内容：成语积累、综应金句朗读、错题本快速浏览。
+
+### G2: Commute Microservice (通勤微服务) - `08:30 - 09:00`
 > **Priority**: `Low` | **Context**: `Mobile`
 
 *   **状态**: 公交/地铁/开车，环境嘈杂。
@@ -377,14 +385,15 @@ func AllocateCompositeTime(category string) map[string]int {
     *   **听觉**: 听时政热点磨耳朵（推荐：半月谈、人民日报）。
     *   **视觉**: 手机刷常识题，刷完即忘，混个眼熟。
 
-### G3: Lunch Break Worker (午休协程) - `12:30 - 13:30`
+### G3: Lunch Break Worker (午休协程) - `12:00 - 13:30`
 > **Priority**: `Medium` | **Context**: `Office`
 
 *   **状态**: 需要快速切换状态。
-*   **任务**: **短平快任务**。
-    *   刷 15 道图形推理（像玩游戏一样放松）。
-    *   看一眼早上的错题。
-    *   **Sleep**: 必须午睡 20 分钟，保证下午工作效率，防止 G4 崩溃。
+*   **任务序列**: `Motion -> Study -> Eat -> Sleep`。
+    *   **12:00 - 12:20 (Motion)**: 简单运动（拉伸/散步），激活身体，摆脱上午工作的疲惫。
+    *   **12:20 - 12:40 (Study)**: 刷 15 道图形推理 / 错题浏览（利用运动后的兴奋期）。
+    *   **12:40 - 13:00 (Eat)**: 快速进食，补充能量。
+    *   **13:00 - 13:30 (Sleep)**: **强制午睡**。即使睡不着也要闭目养神，保证下午和 G4 的电量。
 
 ### G4: Night Batch Job (晚间批处理) - `20:00 - 23:00`
 > **Priority**: `Critical` | **Context**: `Deep Work`
@@ -435,4 +444,4 @@ func HandleWorkOverload(workPressure int) {
 > **Note**: 每日具体的执行任务已迁移至 `daily_tasks/` 目录下，请查看对应的日期文件。
 
 *   [Day 1: 2025-12-05 (Friday)](daily_tasks/2025-12-05_Friday.md)
-
+*   [Day 2: 2025-12-06 (Saturday)](daily_tasks/2025-12-06_Saturday.md)
