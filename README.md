@@ -1,0 +1,1 @@
+# 2026_Guangxi_Career_Exam_Plan_Go_Pattern
