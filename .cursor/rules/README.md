@@ -91,3 +91,4 @@
 - **知识图谱**：`2026_Guangxi_Career_Exam_Knowledge_Graph.md`
 - **命令定义**：`.cursor/commands/`
 - **文档模板**：`.cursor/templates/`
+

@@ -84,3 +84,4 @@ shiye/
 - **模板位置**：`.cursor/templates/reference_template.md`
 - **使用场景**：创建模拟题或案例材料时
 - **必需字段**：材料、练习任务、答题区
+
