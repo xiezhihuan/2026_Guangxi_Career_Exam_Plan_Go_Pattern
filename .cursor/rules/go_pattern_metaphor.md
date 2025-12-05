@@ -1,0 +1,91 @@
+# Go语言设计模式隐喻规则
+
+## 核心原则
+项目使用Go语言的设计模式、并发模型、系统架构等概念来组织备考策略，所有文档和策略都应体现这种技术思维。
+
+## 常用隐喻对照表
+
+### 并发与调度
+| Go概念 | 备考对应 | 说明 |
+|--------|----------|------|
+| Goroutine | G1-G4时间协程 | 将一天分为4个并发协程 |
+| Time Slicing | 时间分片 | 利用碎片时间学习 |
+| Context Switching | 上下文切换 | 在工作/学习状态间快速切换 |
+| Pipeline | 学习流程 | 输入→处理→输出的学习管道 |
+| Channel | 任务传递 | 任务在不同时间段间传递 |
+
+### 系统架构
+| Go概念 | 备考对应 | 说明 |
+|--------|----------|------|
+| Circuit Breaker | 熔断机制 | 工作压力大时降级到Keep Alive模式 |
+| Load Testing | 压力测试 | Stage 3全真模考 |
+| Refactoring | 极简重构 | Stage 1简化学习内容 |
+| Integration | 碎片化集成 | Stage 2将试卷拆分后汇总 |
+| Microservice | 通勤微服务 | G2通勤时间的碎片化学习 |
+
+### 数据处理
+| Go概念 | 备考对应 | 说明 |
+|--------|----------|------|
+| Parser | 言语理解策略 | 快速识别句子结构，找中心句 |
+| Rule Engine | 判断推理策略 | 套用固定公式和规则 |
+| Math Library | 资料分析策略 | 优化速算技巧 |
+| Cache | 常识判断策略 | 秒选，不纠结 |
+| Fallback | 数量关系策略 | 只做简单题，难的直接蒙 |
+
+### 错误处理
+| Go概念 | 备考对应 | 说明 |
+|--------|----------|------|
+| Error Handling | 错题管理 | 记录错题并复盘 |
+| Retry Logic | 错题重做 | 滚动复习错题 |
+| Timeout | Deadline控制 | 每道题超过2分钟跳过 |
+| Context Cancellation | 计划取消 | 加班时取消当晚复习 |
+
+## 文档中的Go风格示例
+
+### 代码块格式
+在文档中使用Go代码块来展示策略和算法：
+
+```go
+type OnJobCandidate struct {
+    Major        string // "电子信息工程"
+    Degree       string // "本科"
+    Location     string // "南宁"
+    WorkHours    string // "09:00-18:00"
+    EnergyLevel  int    // 晚间电量低
+    FragmentTime []string // 通勤、午休、如厕
+}
+```
+
+### 函数式思维
+使用函数来描述解题流程：
+
+```go
+func SolveCompositeQuestion(material Material, question Question) Answer {
+    // Step 1: Input (审题)
+    intent := ParseQuestion(question)
+    scope := LocateMaterial(material, intent)
+    
+    // Step 2: Process (找点)
+    keyPoints := ExtractKeyPoints(scope, intent)
+    
+    // Step 3: Output (加工)
+    answer := FormatAnswer(keyPoints)
+    return answer
+}
+```
+
+### 设计模式应用
+- **Adapter Pattern**：将自然语言转化为逻辑表达式（翻译推理）
+- **Strategy Pattern**：不同模块采用不同策略（资料分析用Math Library，言语理解用Parser）
+- **Observer Pattern**：关注官方公告发布（订阅微信公众号）
+- **Template Method Pattern**：综应答题的标准流程（审题→找点→加工）
+
+## 命名规范
+- 使用Go风格的驼峰命名：`OnJobCandidate`, `ExamSchedule`, `TimeAllocator`
+- 常量使用大写：`OfficialWebsite`, `BackupWebsite`
+- 函数名使用动词开头：`SelectJob`, `AllocateTime`, `HandleWorkOverload`
+
+## 注释风格
+- 使用Go风格的注释：`// 说明文字`
+- 关键逻辑添加注释说明其Go隐喻
+- 复杂算法使用多行注释解释
