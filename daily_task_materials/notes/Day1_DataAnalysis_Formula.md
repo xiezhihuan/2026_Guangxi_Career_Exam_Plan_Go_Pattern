@@ -3,6 +3,7 @@
 > **返回任务卡**: [2025-12-05_Friday.md](../../daily_tasks/2025-12-05_Friday.md)
 
 ## 1. 核心概念 (Core Concepts)
+> **核心考点总结**: [Day 1 核心考点总结 - 增长量](../exam_points_summary/Day1_DataAnalysis_KeyPoints.md)
 
 ### 1.1 增长量 (Growth Amount)
 *   **定义**: 现期量与基期量的差值。
@@ -17,6 +18,8 @@
 
 ## 2. 速算技巧：截位直除法 (Direct Division)
 
+> **核心考点总结**: [截位直除法详解](../exam_points_summary/Day1_Calculation_Techniques_DirectDivision.md)
+
 > **原则**: 选项差距大，分母截两位；选项差距小，分母截三位。
 
 ### 2.1 一步除法 (A/B)
@@ -26,11 +29,14 @@
     *   例: $54321 / 1.234 \approx 54300 / 1.23$
 
 ### 2.2 叠除 (A/B) / (C/D)
+
+> **核心考点总结**: [叠除技巧详解](../exam_points_summary/Day1_Calculation_Techniques_StackedDivision.md)
+
 *   转化为 $(A \times D) / (B \times C)$
 *   先观察大概倍数关系，再动笔。
 
 ## 3. 今日练习建议
-1.  找5道简单的“求增长率”真题。
+1.  [已完成] 5道简单的“求增长率”真题练习 -> [点击跳转](../references/Day1_GrowthRate_Practice.md)
 2.  强制使用**截位直除**，禁止算出精确值。
 3.  记录每道题的耗时。
 
