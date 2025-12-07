@@ -90,4 +90,8 @@ func SolveCompositeQuestion(material Material, question Question) Answer {
 - 关键逻辑添加注释说明其Go隐喻
 - 复杂算法使用多行注释解释
 
+## 行为准则
+*   **修改最小化**: 不允许对任何文件只修改添加一个回车空行；确保所有修改都有实质性内容。
+
+
 
